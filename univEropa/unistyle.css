@@ -1,0 +1,38 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.universitas {
+    background: aqua;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+.namauni {
+    min-height: 10vh;
+    margin-top: 10px;
+}
+
+.gambaruni {
+    width: 80vw;
+    height: 70vh;
+
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.infouni {
+    grid-row: 2;
+    grid-column: 1;
+
+    color: #000;
+    margin: 10px;
+    text-align: justify;
+}
