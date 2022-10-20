@@ -1,0 +1,183 @@
+/* UMUM -> MARGIN PADDING BOX SIZING */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./font/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+* {
+    font-family: montserrat;
+}
+
+/* Note: coba pake pseudo elements buat warnanya biar gampang */
+
+/* NAV */
+.nav {
+    background-color: #000;
+    min-width: 100vw;
+    min-height: 9vh;
+    position: fixed;
+}
+
+.navlogo {
+    width: 2rem;
+    float: left;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+ul li {
+    list-style-type: none;
+    display: flex;
+    float: right;
+    font-size: 1.3rem;
+}
+
+ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #FFF;
+    margin: 10px 20px;
+}
+
+/* BANNER */
+.umum {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url(./gambar/banner-ungu.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.banner{
+    font-size: 10rem;
+}
+
+/* FOOTER */
+.footer {
+    min-width: 100vw;
+    min-height: 9vh;
+    background-color: #000;
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+}
+
+.linktitle {
+    text-decoration: none;
+    font-size: 10rem;
+
+    color: #000;
+    /* ini kalau ga diwarnain dia jadi ungu atau apapun yg kontras ama BG */
+}
+
+/* BERANDA */
+.timeline {
+    background-image: url(./gambar/hyperlight-2.jpg);
+}
+
+.qna {
+    background-image: url(./gambar/hyperlight-1.jpg);
+}
+
+/* DIKTI */
+.luarnegeri {
+    background-image: url(./gambar/peta-dunia.png);
+}
+
+.dalamnegeri {
+    background-image: url(./gambar/merah-putih.jpg);
+}
+
+.eropa {
+    background-image: url(./gambar/nykra-1.jpg);
+}
+
+.amerika {
+    background-image: url(./gambar/nykra-2.jpg);
+}
+
+.asia {
+    background-image: url(./gambar/nykra-3.jpg);
+}
+
+.australia {
+    background-image: url(./gambar/nykra-4.jpg);
+}
+
+/* Isi Informasi Masing2 Univ */
+.universitas {
+    background: aqua;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.namauni {
+    min-height: 10vh;
+    margin-top: 10px;
+}
+
+.gambaruni {
+    width: 80vw;
+    height: 70vh;
+
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.infouni {
+    grid-row: 2;
+    grid-column: 1;
+
+    color: #000;
+    margin: 10px;
+    text-align: justify;
+}
+
+/* Collapse UNI */
+.collapsible {
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+}
+
+/* BAHAN AJAR */
+
+/* DOKUM ada di dokum.css*/

@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: aquamarine;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+}
+
+.univ{
+    background-color: black;
+    width: 25vw;
+    height: 100vh;
+
+    grid-column: 1;
+}
+.univ{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.info{
+    background: mediumpurple;
+    width: 75vw;
+
+    grid-column: 2;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.unibtn{
+    width: 50vw;
+    height: 5vh;
+    background-color: #000;
+    border: 2px solid goldenrod;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+}
+.unibtn:hover{
+    background-color: grey;
+}
+.unibtn a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    display: block;
+}
+
+.infouni{
+    text-align: justify;
+    margin: 10px;
+    display: none;
+}
+
+iframe{
+    width: 75vw;
+    height: 100vh;
+}
