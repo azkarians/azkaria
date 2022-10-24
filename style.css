@@ -52,7 +52,7 @@ ul li a {
 .umum {
     min-width: 100vw;
     min-height: 100vh;
-    background-image: url(./gambar/banner-ungu.jpg);
+    /* background-image: url(./gambar/banner-ungu.jpg); */
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,6 +66,35 @@ ul li a {
 
 .banner{
     font-size: 10rem;
+}
+
+/* Banner masing-masing page */
+.beranda{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./gambar/bannerazk.JPG);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+    color: #FFF;
+}
+
+.infopenting{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./gambar/pexels-janko-ferlic-590493.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 
 /* FOOTER */
@@ -85,26 +114,28 @@ ul li a {
     text-decoration: none;
     font-size: 10rem;
 
-    color: #000;
+    color: #fff;
     /* ini kalau ga diwarnain dia jadi ungu atau apapun yg kontras ama BG */
 }
 
 /* BERANDA */
 .timeline {
-    background-image: url(./gambar/hyperlight-2.jpg);
+    /* background-image: url(./gambar/hyperlight-2.jpg); */
+    background: #000;
 }
 
 .qna {
-    background-image: url(./gambar/hyperlight-1.jpg);
+    /* background-image: url(./gambar/hyperlight-1.jpg); */
+    background: #000;
 }
 
 /* DIKTI */
 .luarnegeri {
-    background-image: url(./gambar/peta-dunia.png);
+    background-image: url(./gambar/PTLN.png);
 }
 
 .dalamnegeri {
-    background-image: url(./gambar/merah-putih.jpg);
+    background-image: url(./gambar/PTN2.png);
 }
 
 .eropa {
