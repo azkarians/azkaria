@@ -37,3 +37,17 @@ window.addEventListener("scroll", function(){
   var header = document.querySelector("#nav");
   header.classList.toggle("sticky", window.scrollY > 0);
 })
+
+function SubForm(){
+    $.ajax({
+        url:"https://api.apispreadsheets.com/data/1gaEK7LbhcVUuM68/",
+        type: "post",
+        data:$("#QnA").serializeArray(),
+        success: function(){
+            alert("Sip, ditunggu jawabannya di email kamu ya!");
+        },
+        error: function(){
+             alert("Ada masalah!! Pertanyaan kamu belumm terkirim!")
+        },
+    });
+}
