@@ -9,24 +9,41 @@
     <link rel="icon" href="./gambar/logo-emas.png">
 </head>
 <body>
-    <div class="nav">
+    <div id="nav" class="navbar">
+        <a href="index.html"><img src="./gambar/logo-emas.ico" alt="Logo"></a>
         <ul>
-            <img class="navlogo" src="./gambar/logo-emas.png" alt="">
-            <li><a href="./others.html">Info Penting</a></li>
+            <li><a href="index.html"><span>Beranda</span></a></li>
+            <!-- <li><a href="#">Persiapan Dikti</a></li>
+            <li><a href="#">Bahan Ajar</a></li> -->
             <li><a href="./dokum.html">Tiga Tahun Kita</a></li>
-            <!-- <li><a href="./bahanajar.html">Bahan Ajar</a></li>
-            <li><a href="./dikti.html">Persiapan Dikti</a></li> -->
-            <li><a href="./index.html">Beranda</a></li>
+            <li><a href="./others.html">Info Penting</a></li>
         </ul>
     </div>
     <div class="umum banner beranda">Welcome to Azkaria</div>
+    
     <div class="umum timeline">
         <iframe src="https://calendar.google.com/calendar/embed?src=adunamics%40gmail.com&ctz=Asia%2FJakarta" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
 
-    <div class="umum qna">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwRmtZOEGGRVzUflXv2jCAXdLPvVLcity8CI1XNKkfUOkv0g/viewform?embedded=true" width="640" height="764" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <!-- Form Pertanyaan -->
+    <div class="container">
+        <p> <span>QnA Seputar</span><br> Pelajaran</p>
+        <div class="form">
+            <form id="QnA">
+                <label for="mail">Email</label>
+                <input type="text" id="mail" name="email" placeholder="Email kamu..">
+    
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="nama" placeholder="Nama kamu..">
+    
+                <label for="tanya">Pertanyaan</label>
+                <textarea name="pertanyaan" id="tanya" cols="30" rows="10" placeholder="Pertanyaan kamu.."></textarea>
+            </form>
+            <button id="submitbtn" onclick='SubForm()'>Submit</button>
+        </div>    
     </div>
+
+    <script src="./script.js"></script>
     <div class="footer">Web Azkara by BPA :D</div>
 </body>
 </html>

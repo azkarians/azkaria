@@ -19,33 +19,136 @@
 /* Note: coba pake pseudo elements buat warnanya biar gampang */
 
 /* NAV */
-.nav {
-    background-color: #000;
-    min-width: 100vw;
-    min-height: 9vh;
-    position: fixed;
-}
-
-.navlogo {
-    width: 2rem;
-    float: left;
-    margin-top: 7px;
-    margin-left: 10px;
-}
-
-ul li {
-    list-style-type: none;
+.navbar {
+    top: 0;
+    left: 0;
     display: flex;
-    float: right;
-    font-size: 1.3rem;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+    background-color: black;
+}
+.navbar.sticky {
+    padding: 5px 100px;
+    background-color: black;
+}
+.navbar.sticky.logo, 
+.navbar.sticky ul li a {
+    color: white;
+}
+.navbar a img {
+    float: left;
+    display: block;
+    width: 3rem;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 12px;
+}
+.navbar ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.navbar ul li {
+    position: relative;
+    list-style: none;
+}
+.navbar ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+.navbar ul li a span {
+    font-weight: bold;
+}
+.navbar ul li a:hover {
+    color: rgb(206, 206, 206);
+}
+.navbar ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    display: none;
+    background-color: black;
+    padding: 10px;
+}
+ul li:hover > ul, 
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+.navbar ul li ul li {
+    clear: both;
+    width: 100%;
+    padding: 5px;
 }
 
-ul li a {
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    color: #FFF;
-    margin: 10px 20px;
+/* Form Pertanyaan */
+.container {
+    margin-top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+.container p {
+    font-family: Inspiration-Regular;
+    font-size: 70px;
+    color: white;
+    float: right;
+    margin-right: 150px;
+    margin-top: 100px;
+    text-align: center;
+}
+.container p span {
+    font-size: 100px;
+    font-family: Inspiration-Regular;
+}
+.form {
+    background-color: #f2f2f2;
+    width: 30%;
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+    float: left;
+    position: relative;
+    margin-left: 250px;
+    opacity: 0.85;
+}
+.form input[type=text], select, textarea {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 12px;
+    border: 1px #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+#submitbtn {
+    background-color: goldenrod; 
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#submitbtn:hover {
+    background-color: gold;
 }
 
 /* BANNER */

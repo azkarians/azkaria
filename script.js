@@ -31,3 +31,9 @@ function clickFunction(content){
   // use the same src in the expanded univ as the button being clicked
   expandUniv.src = content.dataset.source;
 }
+
+// Form
+window.addEventListener("scroll", function(){
+  var header = document.querySelector("#nav");
+  header.classList.toggle("sticky", window.scrollY > 0);
+})
