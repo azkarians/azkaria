@@ -1,21 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@font-face {
+    font-family: Inspiration-Regular;
+    src: url(font/Inspiration-Regular.ttf);
+}
+
 /* UMUM -> MARGIN PADDING BOX SIZING */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
-@font-face {
-    font-family: montserrat;
-    src: url(./font/Montserrat/static/Montserrat-Regular.ttf);
+body {
+    background-color: black;
 }
-
-* {
-    font-family: montserrat;
-}
-
 /* Note: coba pake pseudo elements buat warnanya biar gampang */
 
 /* NAV */
@@ -30,7 +32,6 @@
     transition: 0.6s;
     padding: 40px 100px;
     z-index: 100000;
-    background-color: black;
 }
 .navbar.sticky {
     padding: 5px 100px;
@@ -53,8 +54,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
 }
 .navbar ul li {
     position: relative;
@@ -99,7 +99,7 @@ ul li ul:hover {
 
 /* Form Pertanyaan */
 .container {
-    margin-top: 0px;
+    margin-top: 210px;
     width: 100vw;
     height: 100vh;
     background-color: #000;
@@ -139,7 +139,7 @@ ul li ul:hover {
     resize: vertical;
 }
 #submitbtn {
-    background-color: goldenrod; 
+    background-color: #04AA6D; 
     color: white;
     padding: 12px 20px;
     border: none;
@@ -148,19 +148,15 @@ ul li ul:hover {
     margin-top: 10px;
 }
 #submitbtn:hover {
-    background-color: gold;
+    background-color: #059862;
 }
 
 /* BANNER */
 .umum {
     min-width: 100vw;
     min-height: 100vh;
-    /* background-image: url(./gambar/banner-ungu.jpg); */
-
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -174,16 +170,12 @@ ul li ul:hover {
 /* Banner masing-masing page */
 .beranda{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./gambar/bannerazk.JPG);
-
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-
     align-items: center;
     text-align: center;
     justify-content: center;
     display: flex;
-
     color: #FFF;
 }
 
@@ -223,13 +215,16 @@ ul li ul:hover {
 
 /* BERANDA */
 .timeline {
-    /* background-image: url(./gambar/hyperlight-2.jpg); */
-    background: #000;
+    color: white;
+    text-align: center;
+    margin-top: 210px;
 }
-
-.qna {
-    /* background-image: url(./gambar/hyperlight-1.jpg); */
-    background: #000;
+.timeline p {
+    font-family: Inspiration-Regular;
+    font-size: 70px;
+}
+.timeline iframe {
+    opacity: 0.85;
 }
 
 /* DIKTI */
